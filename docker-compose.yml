@@ -17,6 +17,7 @@ services:
             - horde
         depends_on:
             - "db"
+        command: /usr/sbin/apachectl -D FOREGROUND
         tty: true
 
 networks:
